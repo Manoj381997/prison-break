@@ -1,0 +1,9 @@
+//import "./styles.css";
+//import Paddle from "./paddle.js";
+
+
+//ctx.clearRect(0, 0, 800, 600);
+// ctx.fillStyle = "#f00";
+// ctx.fillRect(20, 20, 100, 100);
+// ctx.fillStyle = "#f00";
+// ctx.fillRect(200, 20, 50, 50);

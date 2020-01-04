@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prison Break</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <img id="ball" src="assets/images/ball.png" />
+    <img id="brick" src="assets/images/brick.png" />
+    <img id="mario" src="assets/images/mario1.jpg" />
+
+    <div class="container-fluid mainElement">
+      <div class="row">
+        <div class="col-2 text-justify">
+          <div id="tabSection">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="instructions-tab"
+                  data-toggle="tab"
+                  href="#instructions"
+                  role="tab"
+                  aria-controls="instructions"
+                  aria-selected="true"
+                  >Instructions</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="profile-tab"
+                  data-toggle="tab"
+                  href="#profile"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                  >About</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="instructions"
+                role="tabpanel"
+                aria-labelledby="instructions-tab"
+              >
+                <ul class="keys">
+                  <li>
+                    <div class="container">
+                      <div class="row">
+                        <img
+                          id="space"
+                          class="col-7"
+                          src="assets/images/Space1.png"
+                          height="30"
+                          width="50"
+                        />
+                        <p class="col-5 key_info"><i>Start</i></p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="container">
+                      <div class="row">
+                        <img
+                          id="esc"
+                          class="col-4"
+                          src="assets/images/Esc.png"
+                          height="50"
+                          width="50"
+                        />
+                        <p class="col-8 key_info">
+                          <i>Pause/Resume</i>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="container">
+                      <div class="row">
+                        <img
+                          id="leftArrow"
+                          class="col-4"
+                          src="assets/images/Left-Arrow1.png"
+                          height="50"
+                          width="50"
+                        />
+                        <p class="col-8 key_info">
+                          <i>Move left</i>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="container">
+                      <div class="row">
+                        <img
+                          id="rightArrow"
+                          class="col-4"
+                          src="assets/images/Right-Arrow1.png"
+                          height="50"
+                          width="50"
+                        />
+                        <p class="key_info col-8">
+                          <i>Move right</i>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="profile"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+              >
+                About Game
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-8">
+          <!-- Game Screen -->
+          <canvas id="gameScreen" width="1000" height="700"> </canvas>
+        </div>
+        <div class="col-2 text-justify">
+          <div class="container gameInfo">
+            <!-- Game Info -->
+            <div id="gameTimer">
+              <h5 id="timer">
+                Time Taken :
+                <span id="time">0</span>
+                sec
+              </h5>
+            </div>
+            <p>Number of Balls : <span id="ballLives"></span></p>
+            <p>Level : <span id="levelNo"></span> / 2</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/index.js"></script>
+  </body>
+</html>

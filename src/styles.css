@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+  /* background-color: whitesmoke; */
+}
+.mainElement {
+  margin: 20px 0 0 0;
+}
+#gameScreen {
+  border: 3px solid black;
+  position: relative;
+}
+#ball,
+#brick,
+#mario {
+  display: none;
+}
+.gameInfo > p {
+  font-size: 20px;
+}
+#ballLives {
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+#levelNo {
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+.keys {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0 0 0;
+}
+.keys > li {
+  margin: 30px 0 0 0;
+}
+.gameInfo {
+  margin: 0 0 0 -20px;
+}
+.key_info {
+  font-size: 14px;
+  padding-top: 8px;
+  text-align: center;
+}
